@@ -706,7 +706,7 @@ class Build
 		var str = toDashSep(str).split('-');
 		switch(str[0])
 		{
-			case 'get' | 'post' | 'delete' | 'patch' | 'put' | 'any':
+			case 'head' | 'get' | 'post' | 'delete' | 'patch' | 'put' | 'any':
 				// valid verb
 				var v = str.shift();
 				if (verb != null && verb != v && v != 'any')
